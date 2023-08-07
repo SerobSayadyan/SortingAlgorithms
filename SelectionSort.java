@@ -1,8 +1,8 @@
 public class SelectionSort {
     public static void sort(int[] arr) {
         int s = 0;
-
         int tmp;
+        
         for (int i = 0; i < arr.length; i++) {
             int min = arr[i];
             for (int j = i; j < arr.length; j++) {
@@ -16,8 +16,5 @@ public class SelectionSort {
             arr[s] = tmp;
         }
 
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
     }
 }
